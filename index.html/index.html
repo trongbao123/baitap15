@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form action="">
+            <label for="add">Nhập tên</label>
+            <input type="text" id="add" placeholder="nhập tên" >
+            <br>
+            <label for="kw">Số kw</label>
+            <input type="number" id="num" placeholder="số kw">
+            <br>
+            <button type="button" onclick="TinhTienTra()">Tính Tiền</button>
+            <p id="out"></p>
+        </form>
+
+
+
+
+        <form >
+            <h2>quản lý tuyển sinh</h2>
+            <label for="diemmon1">Diểm môn 1</label>
+            <input type="number" name="diemmon1" id="diemmon1" placeholder="Nhập điểm môn 1">
+            <br>
+            <br>
+            <label for="diemmon2">Điểm môn 2</label>
+            <input type="number" name="diemmon2" id="diemmon2" placeholder="nhập điểm môn 2">
+            <br>
+            <br>
+            <label for="diemmon3">Điểm môn 3</label>
+            <input type="number" name="diemmon3" id="diemmon3" placeholder="nhập điểm môn 3">
+            <br>
+            <br>
+            <label for="diemchuan">Điểm chuẩn</label>
+            <input type="number" name="diemchuan" id="diemchuan" placeholder="nhập điểm chuẩn">
+            <br>
+            <br>
+            <select id="author_id" name="author_name">
+                <option>Khu vực</option>
+                <option value="2" >Khu vực A</option>
+                <option value="1" >Khu vực B</option>
+                <option value="0.5">Khu vực C</option>
+                <option value="0">Không thuộc khu vực ưu tiên</option>
+            </select>
+            <br>
+            <br>
+            <select name="doituong" id="object">
+                <option>---Đối tượng---</option>
+                <option value="2.5">Đối tượng 1</option>
+                <option value="1.5">Đối tượng 2</option>
+                <option value="1">Đối tượng 3</option>
+                <option value="0">không thuộc đối tượng ưu tiên</option>
+            </select>
+            <br>
+            <br>
+            <button type="button" onclick="DiemChuan()">Tính</button>
+            <p id="output"></p>
+        </form>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/bai1.js"></script>
+</body>
+</html>
